@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import TweenOne from 'rc-tween-one';
-import { Menu } from 'antd';
+import { Menu,Icon } from 'antd';
 
 const Item = Menu.Item;
 
@@ -10,6 +10,7 @@ class Header extends React.Component {
     super(props);
     this.state = {
       phoneOpen: false,
+      current: '0',
     };
   }
 
@@ -18,14 +19,22 @@ class Header extends React.Component {
       phoneOpen: !this.state.phoneOpen,
     });
   }
-
+  handleClick = (e) => {
+    console.log('click ', e);
+    this.setState({
+      current: e.key,
+    });
+  }
   render() {
+    let  self= this;
     const props = { ...this.props };
     const isMobile = props.isMobile;
     delete props.isMobile;
     const navData = { menu1: '导航一', menu2: '导航二', menu3: '导航三', menu4: '导航四' };;
     const navChildren = Object.keys(navData)
-      .map((key, i) => (<Item key={i}>{navData[key]}</Item>));
+      .map((key, i) => (<Item
+        style={{ 'color': self.state.current==i?'#6c5de7':''  }}
+        key={i}>{navData[key]}</Item>));
     return (<TweenOne
       component="header"
       animation={{ opacity: 0, type: 'from' }}
@@ -56,9 +65,9 @@ class Header extends React.Component {
           className={`${this.props.className}-phone-nav-text`}
         >
           <Menu
-            defaultSelectedKeys={['0']}
             mode="inline"
             theme="dark"
+            selectedKeys={[this.state.current]}
           >
             {navChildren}
           </Menu>
@@ -68,8 +77,10 @@ class Header extends React.Component {
         animation={{ x: 30, type: 'from', ease: 'easeOutQuad' }}
       >
         <Menu
-          mode="horizontal" defaultSelectedKeys={['0']}
-          id={`${this.props.id}-menu`}
+          mode="horizontal"
+          selectedKeys={[this.state.current]}
+          // id={`${this.props.id}-menu`}
+          onClick={this.handleClick}
         >
           {navChildren}
         </Menu>
