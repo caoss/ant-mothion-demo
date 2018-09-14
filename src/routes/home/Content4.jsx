@@ -15,6 +15,7 @@ class Content extends React.Component {
     this.props.form.validateFields((err, values) => {
       if (!err) {
         console.log('Received values of form: ', values);
+        alert("用户名或密码错误");
       }
     });
   }
@@ -56,9 +57,12 @@ class Content extends React.Component {
                 <Button type="primary" htmlType="submit" className="login-form-button">
                   登录
                 </Button>
-                  或者
-                <Link to='./register'>
-                  注册
+                  没有帐号
+                <Link to='./register' style={{'marginLeft':'20px'}}>
+                  去注册
+                </Link>
+                <Link to='./' style={{'marginLeft':'20px'}}>
+                  返回首页
                 </Link>
               </FormItem>
             </Form>

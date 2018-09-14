@@ -15,6 +15,7 @@ class Content extends React.Component {
     this.props.form.validateFields((err, values) => {
       if (!err) {
         console.log('Received values of form: ', values);
+        alert("用户名已存在");
       }
     });
   }
@@ -63,8 +64,11 @@ class Content extends React.Component {
             <Button type="primary" htmlType="submit" className="login-form-button">
               注册
             </Button>
-              或者
-            <Link to='./login'>登录</Link>
+              有帐号了？
+            <Link to='./login' style={{'marginLeft':'20px'}}>去登录</Link>
+            <Link to='./' style={{'marginLeft':'20px'}}>
+                  返回首页
+                </Link>
           </FormItem>
         </Form>
       </div>

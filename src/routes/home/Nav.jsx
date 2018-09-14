@@ -34,7 +34,7 @@ class Header extends React.Component {
         },
         {
           'menu':'联系我们',
-          'path':'/home',
+          'path':'/about_us',
         },
         {
           'menu':'登录',
@@ -118,7 +118,7 @@ class Header extends React.Component {
             >
               {
                 this.props.hideNav?
-                ''
+                <NavLink to='./'>返回首页</NavLink>
                 :
                 navChildren
               }
