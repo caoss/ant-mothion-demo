@@ -25,13 +25,25 @@ class Header extends React.Component {
     delete props.isMobile;
     const navData =[
         {
-          'menu':'导航一',
+          'menu':'首页',
           'path':'/',
         },
         {
-          'menu':'导航二',
+          'menu':'产品',
           'path':'/home',
-        }
+        },
+        {
+          'menu':'联系我们',
+          'path':'/home',
+        },
+        {
+          'menu':'登录',
+          'path':'/login',
+        },
+        {
+          'menu':'注册',
+          'path':'/register',
+        },
       ];
 
     const navChildren =navData.map((item, i) => (
@@ -52,7 +64,9 @@ class Header extends React.Component {
           animation={{ x: -30, type: "from", ease: "easeOutQuad" }}
           id={`${this.props.id}-logo`}
         >
-          <img width="100%" src="https://os.alipayobjects.com/rmsportal/mlcYmsRilwraoAe.svg" alt=''/>
+        <NavLink to='./'>
+            <img width="100%" src="https://os.alipayobjects.com/rmsportal/mlcYmsRilwraoAe.svg" alt=''/>
+        </NavLink>
         </TweenOne>
 
 
@@ -81,16 +95,17 @@ class Header extends React.Component {
                 theme="dark"
                 selectedKeys={[this.state.current]}
               >
-                {navChildren}
+              {
+                this.props.hideNav?
+                ''
+                :
+                navChildren
+              }
               </Menu>
             </div>
           </div>
         )
-
-
         :
-
-
         (
           <TweenOne
             className={`${this.props.className}-nav`}
@@ -98,9 +113,15 @@ class Header extends React.Component {
           >
             <Menu
               mode="horizontal"
+              theme="dark"
               selectedKeys={[this.state.current]}
             >
-              {navChildren}
+              {
+                this.props.hideNav?
+                ''
+                :
+                navChildren
+              }
             </Menu>
           </TweenOne>
         )}

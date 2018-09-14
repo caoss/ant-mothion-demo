@@ -1,6 +1,8 @@
 import React from 'react';
 import { Router, Route, Switch,Link } from 'dva/router';
 import Home from './routes/IndexPage';
+import Login from './routes/login/Login';
+import Register from './routes/register/Register';
 import IndexPage from './routes/home';
 import Nav from './routes/home/Nav';
 class App2 extends React.Component {//es6
@@ -17,10 +19,12 @@ function RouterConfig({ history }) {
   return (
     <Router history={history}>
       <Switch>
+        <Route path="/login" exact component={Login} />
+        <Route path="/register" exact component={Register} />
         <App2>
           <Route path="/" exact component={IndexPage} />
           <Route path="/home" exact component={Home} />
-          </App2>
+        </App2>
       </Switch>
     </Router>
   );
