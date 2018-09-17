@@ -37,13 +37,10 @@ class Content extends React.Component {
             id={`${props.id}-textWrapper`}
           >
             <h1 key="h1" id={`${props.id}-title`}>
-              联系我们
+              分布式中间件
             </h1>
             <p key="p" id={`${props.id}-content`}>
-            网站名称：尼特neets小站<br></br>
-            公司名称：苏州尼特数据科技有限公司<br></br>
-            公司座机：0512-50391969<br></br>
-            公司注册地址：苏州工业园区东长路88号2.5产业园N1幢903室
+              金融级联机交易处理中间件，大规模分布式计算机，数万笔/秒级并发能力，严格保证交易数据统一性。金融级联机交易处理中间件，大规模分布式计算机，数万笔/秒级并发能力，严格保证交易数据统一性。
             </p>
           </QueueAnim>
           <TweenOne

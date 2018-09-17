@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import TweenOne from "rc-tween-one";
 import { Menu, Icon } from "antd";
-import { NavLink } from 'dva/router';
+import { NavLink,Link } from 'dva/router';
 const Item = Menu.Item;
 
 class Header extends React.Component {
@@ -26,7 +26,7 @@ class Header extends React.Component {
     const navData =[
         {
           'menu':'首页',
-          'path':'/',
+          'path':'/index',
         },
         {
           'menu':'产品',
@@ -64,9 +64,9 @@ class Header extends React.Component {
           animation={{ x: -30, type: "from", ease: "easeOutQuad" }}
           id={`${this.props.id}-logo`}
         >
-        <NavLink to='./'>
+        <Link to='./'>
             <img width="100%" src="https://os.alipayobjects.com/rmsportal/mlcYmsRilwraoAe.svg" alt=''/>
-        </NavLink>
+        </Link>
         </TweenOne>
 
 
@@ -118,7 +118,7 @@ class Header extends React.Component {
             >
               {
                 this.props.hideNav?
-                <NavLink to='./'>返回首页</NavLink>
+                <Link to='./'>返回首页</Link>
                 :
                 navChildren
               }

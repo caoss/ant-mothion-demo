@@ -3,11 +3,10 @@ import ReactDOM from 'react-dom';
 import { enquireScreen } from 'enquire-js';
 
 
-// import Content0 from './Content0';
-import Content0 from '../home/Content2';
+import Content0 from './Content2';
 
 import './less/antMotion_style.less';
-import './index.css';
+
 let isMobile;
 enquireScreen((b) => {
   isMobile = b;
@@ -41,7 +40,7 @@ export default class Home extends React.Component {
 
   render() {
     const children = [
-      <Content0 id="content_8_0" key="content_8_0" isMobile={this.state.isMobile}/>,
+      <Content0 id="content_0_0" key="content_0_0" isMobile={this.state.isMobile}/>,
     ];
     return (
       <div className="templates-wrapper">
