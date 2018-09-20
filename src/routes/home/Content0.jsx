@@ -54,7 +54,7 @@ class Content extends React.Component {
               </Link>
             </Button>
             <Button type="ghost3" key="button"  style={{ 'margin':'30px 15px'}}>
-              <Link to='./aboutus'>
+              <Link to='./about_us'>
                   联系我们
               </Link>
             </Button>
