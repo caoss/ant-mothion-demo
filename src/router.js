@@ -1,6 +1,8 @@
 import React from 'react';
 import { Router, Route, Switch,Link } from 'dva/router';
 import Home from './routes/IndexPage';
+import Home2 from './routes/IndexPage2';
+import Home3 from './routes/IndexPage3';
 import Login from './routes/login/Login';
 import Register from './routes/register/Register';
 import IndexPage from './routes/home';
@@ -27,7 +29,9 @@ function RouterConfig({ history }) {
         <App2>
           <Route path="/" exact component={IndexPage} />
           <Route path="/index" exact component={IndexPage} />
-          <Route path="/home" exact component={Home} />
+          <Route path="/hyfa" exact component={Home} />
+          <Route path="/zyfw" exact component={Home2} />
+          <Route path="/scbg" exact component={Home3} />
           <Route path="/about_us" exact component={AboutUs} />
         </App2>
       </Switch>

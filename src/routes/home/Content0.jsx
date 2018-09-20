@@ -39,13 +39,13 @@ class Content extends React.Component {
             Learn More
           </Button>
         </QueueAnim>
-        <TweenOne
+        {/* <TweenOne
           animation={{ y: '-=20', yoyo: true, repeat: -1, duration: 1000 }}
           className={`${props.className}-icon`}
           key="icon"
         >
           <Icon type="down" />
-        </TweenOne>
+        </TweenOne> */}
       </OverPack>
     );
   }

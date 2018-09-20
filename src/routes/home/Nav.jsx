@@ -29,8 +29,16 @@ class Header extends React.Component {
           'path':'/index',
         },
         {
-          'menu':'产品',
-          'path':'/home',
+          'menu':'行业方案',
+          'path':'/hyfa',
+        },
+        {
+          'menu':'专业服务',
+          'path':'/zyfw',
+        },
+        {
+          'menu':'市场报告',
+          'path':'/scbg',
         },
         {
           'menu':'联系我们',
