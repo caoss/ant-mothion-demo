@@ -4,6 +4,8 @@ import { Button, Icon } from 'antd';
 import QueueAnim from 'rc-queue-anim';
 import TweenOne from 'rc-tween-one';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
+import logo from './logo.png';
+import { NavLink,Link } from 'dva/router';
 
 class Content extends React.Component {
   render() {
@@ -17,7 +19,7 @@ class Content extends React.Component {
       >
         <QueueAnim
           type={['bottom', 'top']}
-          delay={200}
+          delay={100}
           className={`${props.className}-wrapper`}
           key="text"
           id={`${props.id}-wrapper`}
@@ -27,25 +29,37 @@ class Content extends React.Component {
             key="title"
             id={`${props.id}-title`}
           >
-            <img width="100%" src="https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png" />
+            <img width="100%" src={ logo } />
           </span>
           <p
             key="content"
             id={`${props.id}-content`}
           >
-            一个高效的页面动画解决方案
+            企业行业解决方案，因为专一，所以专业
           </p>
-          <Button type="ghost" key="button" id={`${props.id}-button`}>
-            Learn More
-          </Button>
+          <div id={`${props.id}-button`}>
+            <Button type="ghost" key="button"  style={{ 'margin':'30px 15px'}}>
+              <Link to='./hyfa'>
+                  行业方案
+              </Link>
+            </Button>
+            <Button type="ghost1" key="button" style={{ 'margin':'30px 15px'}}>
+              <Link to='./zyfw'>
+                  专业服务
+              </Link>
+            </Button>
+            <Button type="ghost2" key="button"  style={{ 'margin':'30px 15px'}}>
+              <Link to='./scbg'>
+                  市场报告
+              </Link>
+            </Button>
+            <Button type="ghost3" key="button"  style={{ 'margin':'30px 15px'}}>
+              <Link to='./aboutus'>
+                  联系我们
+              </Link>
+            </Button>
+          </div>
         </QueueAnim>
-        {/* <TweenOne
-          animation={{ y: '-=20', yoyo: true, repeat: -1, duration: 1000 }}
-          className={`${props.className}-icon`}
-          key="icon"
-        >
-          <Icon type="down" />
-        </TweenOne> */}
       </OverPack>
     );
   }

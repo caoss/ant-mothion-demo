@@ -41,7 +41,7 @@ function IndexPage() {
               description={item.description}
             />
             { item.content.substr(0,100)+'...' }
-            <Link to='./login'  >
+            <Link to={ `./wz/${item.id}` }   >
             -[详情]</Link>
           </List.Item>
         )}

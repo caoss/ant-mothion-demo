@@ -16,7 +16,7 @@ function IndexPage() {
   return (
     <div style={{'width':'1200px','margin':'0 auto','minHeight':'600px'  }}>
       <Breadcrumb style={{'padding':'20px 0', }}>
-          <Breadcrumb.Item><Link to="home">主页</Link></Breadcrumb.Item>
+          <Breadcrumb.Item><Link to="/home">主页</Link></Breadcrumb.Item>
           <Breadcrumb.Item>专业服务</Breadcrumb.Item>
         </Breadcrumb>
         <List
@@ -41,7 +41,7 @@ function IndexPage() {
               description={item.description}
             />
             { item.content.substr(0,100)+'...' }
-            <Link to='./login'  >
+            <Link to={ `./zy/${item.id}` }   >
             -[详情]</Link>
           </List.Item>
         )}

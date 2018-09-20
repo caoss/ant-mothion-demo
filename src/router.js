@@ -3,6 +3,8 @@ import { Router, Route, Switch,Link } from 'dva/router';
 import Home from './routes/IndexPage';
 import Home2 from './routes/IndexPage2';
 import Home3 from './routes/IndexPage3';
+import Home31 from './routes/IndexPage3-1';
+import Home21 from './routes/IndexPage2-1';
 import Login from './routes/login/Login';
 import Register from './routes/register/Register';
 import IndexPage from './routes/home';
@@ -31,7 +33,9 @@ function RouterConfig({ history }) {
           <Route path="/index" exact component={IndexPage} />
           <Route path="/hyfa" exact component={Home} />
           <Route path="/zyfw" exact component={Home2} />
-          <Route path="/scbg" exact component={Home3} />
+          <Route path="/scbg" exact  component={Home3} />
+          <Route path="/wz/:id"  component={Home31} />
+          <Route path="/zy/:id"  component={Home21} />
           <Route path="/about_us" exact component={AboutUs} />
         </App2>
       </Switch>

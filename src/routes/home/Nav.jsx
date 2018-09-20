@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import TweenOne from "rc-tween-one";
 import { Menu, Icon } from "antd";
 import { NavLink,Link } from 'dva/router';
+import logo from './logo.png';
 const Item = Menu.Item;
 
 class Header extends React.Component {
@@ -73,7 +74,7 @@ class Header extends React.Component {
           id={`${this.props.id}-logo`}
         >
         <Link to='./'>
-            <img width="100%" src="https://os.alipayobjects.com/rmsportal/mlcYmsRilwraoAe.svg" alt=''/>
+            <img width="100%" src={logo} alt=''/>
         </Link>
         </TweenOne>
 
