@@ -23,7 +23,11 @@ function IndexPage(data) {
         <h2 style={{'marginBottom':'20px','textAlign':'center'}}>
           {listData[id].title}
         </h2>
-        <div style={{'textIndent':'2em','lineHeight':'30px'}} dangerouslySetInnerHTML={{__html: listData[id].content }} />
+        <div>
+        {
+          listData[id].content
+        }
+        </div>
     </div>
   );
 }

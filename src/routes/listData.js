@@ -6,7 +6,7 @@ const listData = [
     title:'互联网内容呈现形式的发展变化',
     avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
     description: '互联网内容呈现形式的发展变化',
-    content: "现阶段已经到了泛娱乐化时代信息的风口，随着信息化、自动化效率的提高，人们不用花太多的时间，就可以获得生活的所需，随着空闲时间的增多，我们正在迎来一个泛娱乐时代。……（付费观看全文，10元/篇）",
+    content: "现阶段已经到了泛娱乐化时代信息的风口，随着信息化、自动化效率的提高，人们不用花太多的时间，就可以获得生活的所需，随着空闲时间的增多，我们正在迎来一个泛娱乐时代。……",
   },
   {
     href:'',
@@ -14,7 +14,7 @@ const listData = [
     title:'“1”和“100”',
     avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
     description: '“1”和“100”',
-    content: "翻开中国互联网的发展历程，我们会发现很有意思的一个现象：一开始，是内容网站的崛起，像新浪、搜狐、网易，在这之后又出现了很多不知名的各种内容网站。……（付费观看全文，8元/篇）",
+    content: "翻开中国互联网的发展历程，我们会发现很有意思的一个现象：一开始，是内容网站的崛起，像新浪、搜狐、网易，在这之后又出现了很多不知名的各种内容网站。……",
   },
   {
     href:'',
@@ -22,7 +22,7 @@ const listData = [
     title:'构建工具化用户端的应用研究',
     avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
     description: '构建工具化用户端的应用研究',
-    content: "使用搜索功能的前提有三：其一是内容要足够多；其二就是内容是要有效；其三是最终做到完成搜索后的跳转环节，逻辑链要短。当我们希望做一个聚合平台的时候，我们就知道……（付费观看全文，12元/篇）",
+    content: "使用搜索功能的前提有三：其一是内容要足够多；其二就是内容是要有效；其三是最终做到完成搜索后的跳转环节，逻辑链要短。当我们希望做一个聚合平台的时候，我们就知道……",
   },
   {
     href:'',
@@ -30,7 +30,7 @@ const listData = [
     title:'网络自媒体矩阵管理',
     avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
     description: '互联网内容呈现形式的发展变化',
-    content: "自媒体矩阵通常指多个自媒体平台有机组合在一起，为同一个企业或者个人打造品牌进行产品营销的营销手段。基本上分别为五大块……（付费观看全文，10元/篇）",
+    content: "自媒体矩阵通常指多个自媒体平台有机组合在一起，为同一个企业或者个人打造品牌进行产品营销的营销手段。基本上分别为五大块……",
   },
   {
     href:'',
@@ -38,7 +38,7 @@ const listData = [
     title:'大数据服务于内容生产的应用与研究',
     avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
     description: '大数据服务于内容生产的应用与研究',
-    content: "独单量分析，当我们用大数据的方式服务内容生产者给他们带来增值服务时，我们可以根据服务的密度来……（付费观看全文，9元/篇）",
+    content: "独单量分析，当我们用大数据的方式服务内容生产者给他们带来增值服务时，我们可以根据服务的密度来……",
   },
 
 
@@ -56,7 +56,7 @@ const listData = [
     title:'大数据服务于内容生产的应用与研究',
     avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
     description: '大数据服务于内容生产的应用与研究',
-    content: "独单量分析，当我们用大数据的方式服务内容生产者给他们带来增值服务时，我们可以根据服务的密度来……（付费观看全文，9元/篇）",
+    content: "独单量分析，当我们用大数据的方式服务内容生产者给他们带来增值服务时，我们可以根据服务的密度来……",
   },
 ];
 

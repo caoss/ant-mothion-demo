@@ -19,7 +19,7 @@ class Content extends React.Component {
       >
         <QueueAnim
           type={['bottom', 'top']}
-          delay={100}
+          delay={200}
           className={`${props.className}-wrapper`}
           key="text"
           id={`${props.id}-wrapper`}
