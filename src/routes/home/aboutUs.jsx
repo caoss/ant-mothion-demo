@@ -39,12 +39,9 @@ export default class Home extends React.Component {
   }
 
   render() {
-    const children = [
-      <Content0 id="content_0_0" key="content_0_0" isMobile={this.state.isMobile}/>,
-    ];
     return (
       <div className="templates-wrapper">
-        {this.state.show && children}
+          <Content0 id="content_0_0" key="content_0_0" isMobile={this.state.isMobile}/>,
       </div>
     );
   }
